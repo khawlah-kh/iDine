@@ -15,7 +15,13 @@ struct ContentView: View {
             List(menu,id:\.id){ section in
                 Section(header: Text("\(section.name)")){
                     ForEach(section.items,id:\.id){ item in
-                        ItemRow(item: item)
+                        NavigationLink {
+                            ItemDetail(item: item)
+                        } label: {
+                            ItemRow(item: item)
+                        }
+
+                        
                         
                     }
                     
@@ -33,5 +39,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
 }
