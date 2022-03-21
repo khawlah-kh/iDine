@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ItemDetail: View {
+    @EnvironmentObject var order : Order
     let item : MenuItem
     var body: some View {
         VStack{
@@ -24,6 +25,21 @@ struct ItemDetail: View {
             }
             Text(item.description)
             Spacer()
+            Button {
+                order.add(item: item)
+                    
+            } label: {
+                Text("Add")
+                    .foregroundColor(.black)
+                    .font(.title)
+                    .padding()
+                    .cornerRadius(5)
+                    .frame(width: UIScreen.main.bounds.width/2, height: 56)
+                    .background(Color.yellow)
+
+            
+            }
+
         }.padding()
             .navigationTitle(item.name)
             .navigationBarTitleDisplayMode(.inline)
