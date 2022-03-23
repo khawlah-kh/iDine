@@ -30,3 +30,10 @@ class Order : ObservableObject{
         }
     }
 }
+
+
+enum PaymentType : String {
+    case cash = "Cash"
+    case creditCard = "Credit Card"
+    case iDinePoints = "iDine Points"
+}

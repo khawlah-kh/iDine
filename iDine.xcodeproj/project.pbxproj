@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		906402F027E79CFB00FA8A41 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906402EF27E79CFB00FA8A41 /* ItemDetail.swift */; };
+		909267C727EADD9900E27938 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909267C627EADD9900E27938 /* CheckoutView.swift */; };
 		90B692A527E600F800D71829 /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B692A427E600F800D71829 /* iDineApp.swift */; };
 		90B692A727E600F800D71829 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B692A627E600F800D71829 /* ContentView.swift */; };
 		90B692A927E600FA00D71829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90B692A827E600FA00D71829 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		906402EF27E79CFB00FA8A41 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		909267C627EADD9900E27938 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		90B692A127E600F800D71829 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B692A427E600F800D71829 /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
 		90B692A627E600F800D71829 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				906402EF27E79CFB00FA8A41 /* ItemDetail.swift */,
 				90BF801027E8F2B1002CFD30 /* OrderView.swift */,
 				90BF801227E8F425002CFD30 /* MenuView.swift */,
+				909267C627EADD9900E27938 /* CheckoutView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				906402F027E79CFB00FA8A41 /* ItemDetail.swift in Sources */,
 				90BF801127E8F2B1002CFD30 /* OrderView.swift in Sources */,
+				909267C727EADD9900E27938 /* CheckoutView.swift in Sources */,
 				90B692A727E600F800D71829 /* ContentView.swift in Sources */,
 				90B692A527E600F800D71829 /* iDineApp.swift in Sources */,
 				90BF801327E8F425002CFD30 /* MenuView.swift in Sources */,
