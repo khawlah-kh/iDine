@@ -26,8 +26,8 @@ struct OrderView: View {
                                 Spacer()
                                 Text("$\(item.price)")
                             }
-                            
-                        }
+                           
+                        } .onDelete(perform: deleteItems)
                     }
                     Section {
                         NavigationLink(destination: CheckoutView()) {
@@ -37,6 +37,9 @@ struct OrderView: View {
                     
                 }
             .listStyle(.insetGrouped)
+            .toolbar {
+               EditButton()
+            }
             }
         }
          .navigationTitle("Order")
@@ -45,6 +48,10 @@ struct OrderView: View {
         }
         
     }
+    func deleteItems(at offsets: IndexSet) {
+       order.items.remove(atOffsets: offsets)
+    }
+    
 }
 
 struct OrderView_Previews: PreviewProvider {
