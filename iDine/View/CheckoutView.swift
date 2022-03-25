@@ -52,11 +52,11 @@ struct CheckoutView: View {
         .navigationBarTitleDisplayMode(.inline)
         .alert(isPresented: $showingPaymentAlert) {
             Alert(title: Text("Order confirmed"), message: Text("Your total was \(totalPrice) – thank you!"),
-            dismissButton: .default(Text("OK")))
+                  dismissButton: .default(Text("OK")))
         }
     }
-        
-   
+    
+    
     var totalPrice: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency

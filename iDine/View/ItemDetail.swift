@@ -16,6 +16,8 @@ struct ItemDetail: View {
                 Image(item.mainImage)
                     .resizable()
                     .scaledToFit()
+                    .padding(.top)
+                   
                 Text("\(item.photoCredit)")
                     .padding(4)
                     .background(Color.black)
@@ -27,19 +29,21 @@ struct ItemDetail: View {
             Spacer()
             Button {
                 order.add(item: item)
-                    
+                
             } label: {
                 Text("Add")
+                    .kerning(2)
                     .foregroundColor(.black)
-                    .font(.title)
+                    .font(.title2)
                     .padding()
-                    .cornerRadius(5)
                     .frame(width: UIScreen.main.bounds.width/2, height: 56)
                     .background(Color.yellow)
+                    .cornerRadius(12)
 
-            
+                
+                
             }
-
+            
         }.padding()
             .navigationTitle(item.name)
             .navigationBarTitleDisplayMode(.inline)

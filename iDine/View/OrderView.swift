@@ -12,44 +12,41 @@ struct OrderView: View {
     var body: some View {
         NavigationView {
             VStack{
-            if order.items.isEmpty
-            {
-                EmptyCart()
-            }
-            
-         else {
-                List {
-                    Section {
-                        ForEach(order.items) { item in
-                            HStack {
-                                Text(item.name)
-                                Spacer()
-                                Text("$\(item.price)")
-                            }
-                           
-                        } .onDelete(perform: deleteItems)
-                    }
-                    Section {
-                        NavigationLink(destination: CheckoutView()) {
-                            Text("Place Order")
+                if order.items.isEmpty
+                { EmptyCart() }
+                else {
+                    List {
+                        Section {
+                            ForEach(order.items) { item in
+                                HStack {
+                                    Text(item.name)
+                                    Spacer()
+                                    Text("$\(item.price)")
+                                }
+                                
+                            } .onDelete(perform: deleteItems)
                         }
+                        Section {
+                            NavigationLink(destination: CheckoutView()) {
+                                Text("Place Order")
+                            }
+                        }
+                        
                     }
-                    
+                    .listStyle(.insetGrouped)
+                    .toolbar {
+                        EditButton()
+                    }
                 }
-            .listStyle(.insetGrouped)
-            .toolbar {
-               EditButton()
             }
-            }
-        }
-         .navigationTitle("Order")
-  
-        
+            .navigationTitle("Order")
+            
+            
         }
         
     }
     func deleteItems(at offsets: IndexSet) {
-       order.items.remove(atOffsets: offsets)
+        order.items.remove(atOffsets: offsets)
     }
     
 }

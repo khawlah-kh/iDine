@@ -10,16 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-       MenuView()
+            MenuView()
                 .tabItem {
                     Label("Menu", systemImage: "list.dash")
                 }
-        OrderView()
+            OrderView()
                 .tabItem {
                     Label("Order", systemImage: "square.and.pencil")                }
-        }
-        
-        
+        }  
     }
 }
 

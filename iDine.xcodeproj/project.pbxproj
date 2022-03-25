@@ -71,8 +71,8 @@
 			children = (
 				90B692BD27E60C4900D71829 /* App */,
 				90B692BC27E60C2A00D71829 /* Model */,
-				90B692BA27E6048B00D71829 /* Utilities */,
 				90B692BB27E60C1C00D71829 /* View */,
+				90B692BA27E6048B00D71829 /* Utilities */,
 				90B692A827E600FA00D71829 /* Assets.xcassets */,
 				90B692AA27E600FA00D71829 /* Preview Content */,
 			);
